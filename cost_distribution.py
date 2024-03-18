@@ -11,13 +11,14 @@ def average(array):
 
 
 if __name__ == '__main__':
-  # BFS_test_pass, BFS_node_generated = BFS_test(100)
-  # A_test_pass, A_node_generated = A_test(100)
+  num_of_testcases = 1000
+  
+  BFS_test_pass, BFS_node_generated = BFS_test(num_of_testcases)
+  A_test_pass, A_node_generated = A_test(num_of_testcases)
   
   
-  
-  A_test_pass, A_node_generated = (2, [0, 0, 0, 3679, 0, 0, 0, 0, 0, 545])
-  BFS_test_pass, BFS_node_generated = (2, [0, 0, 0, 278597, 0, 0, 0, 0, 0, 9083])
+  # A_test_pass, A_node_generated = (2, [0, 0, 0, 3679, 0, 0, 0, 0, 0, 545])
+  # BFS_test_pass, BFS_node_generated = (2, [0, 0, 0, 278597, 0, 0, 0, 0, 0, 9083])
   
   average_A_node_generated = average(list(filter(lambda x: x > 0, A_node_generated)))
   average_BFS_node_generated = average(list(filter(lambda x: x > 0, BFS_node_generated)))
