@@ -7,5 +7,6 @@
     "xlabel",
     "xticks",
     "ylabel"
-  ]
+  ],
+  "python.analysis.typeCheckingMode": "off"
 }
